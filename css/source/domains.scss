@@ -2,6 +2,10 @@ $family-sans: "Fira Sans", sans-serif;
 $family-condensed: "Fira Sans Condensed", sans-serif;
 $family-compact: "SF Compact Display";
 
+.header-nav-items {
+  display: flex;
+}
+
 .header-nav-item {
   font-family: $family-compact;
   font-style: normal;
@@ -12,13 +16,14 @@ $family-compact: "SF Compact Display";
   font-size: 14px;
   padding: 14px 20px;
   text-align: center;
-  width: 16.66%;
+  box-sizing: border-box;
 
   &:hover {
     background: #F4264B;
     border-radius: 12px;
     color: #ffffff;
     text-transform: uppercase;
+    padding: 14px 15px;
   }
 }
 
@@ -187,6 +192,12 @@ $family-compact: "SF Compact Display";
 
   .header {
     justify-content: flex-start;
+  }
+
+  .burger-menu_nav  {
+    .header-nav-item {
+      color: white;
+    }
   }
 }
 
