@@ -1,0 +1,215 @@
+$family-sans: "Fira Sans", sans-serif;
+$family-condensed: "Fira Sans Condensed", sans-serif;
+$family-compact: "SF Compact Display";
+
+.header-nav-item {
+  font-family: $family-compact;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 21px;
+  color: #616883;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 14px 20px;
+  text-align: center;
+  width: 16.66%;
+
+  &:hover {
+    background: #F4264B;
+    border-radius: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.domains-paragraph {
+  color: #ffffff;
+}
+
+.domains-heading {
+  position: relative;
+  color: #ffffff;
+
+  &:after {
+    content: '';
+    background: $red;
+    box-shadow: 0px -6px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-180deg);
+    width: 35px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 10px;
+  }
+}
+
+.domains-main-section {
+  padding: 50px 0 80px 0;
+  background: #323953 url("../images/domains/domains-stripes-background.png") center / contain no-repeat;
+  margin-bottom: 150px;
+}
+
+.side-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-menu-list {
+  background: #FFFFFF;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 49px;
+  height: max-content;
+  width: max-content;
+  box-sizing: border-box;
+  padding: 50px 40px 40px 50px;
+  margin: 0;
+  margin-right: 10%;
+
+  &.services-menu-list {
+    min-width: 260px;
+    box-sizing: border-box;
+  }
+}
+
+.side-menu-item {
+  margin-bottom: 20px;
+  cursor: pointer;
+  list-style: none;
+  color: #151821;
+
+  &:hover {
+    color: #F4264B;
+    font-weight: 600;
+  }
+}
+
+.domain-image-wrapper {
+  display: flex;
+  justify-content: center;
+
+  &.healthcare {
+    background: url("../images/domains/healthcare-stripes.png") center / cover no-repeat;
+    max-width: 180px;
+  }
+
+  &.embedded {
+    background: url("../images/domains/embedded-stripes.png") center / cover no-repeat;
+    max-width: 320px;
+  }
+
+  &.digital {
+    background: url("../images/domains/digital-stripes.png") center / cover no-repeat;
+    max-width: 240px;
+  }
+
+  &.e-commerce {
+    background: url("../images/domains/e-commerce-stripes.png") center / cover no-repeat;
+    max-width: 340px;
+  }
+
+  &.electronic {
+    background: none;
+    max-width: 300px;
+  }
+}
+
+.domain-section {
+  border-bottom: 2px solid #EAEEFB;
+  padding: 50px 0 30px 0;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    color: #616883;
+    line-height: 34px;
+  }
+
+  li:before {
+    content: '';
+    background: url('../images/domains/domain-bullet.png') center / contain no-repeat;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.domains-form {
+  margin: 50px auto 100px auto;
+}
+
+.header {
+  .burger-menu_lines:before, .burger-menu_lines:after, .burger-menu_lines {
+    background: #616883;
+  }
+}
+
+.domains-wrapper {
+  overflow-x: hidden;
+
+  .burger-menu_nav {
+    z-index: 1;
+    top: 0;
+  }
+}
+
+.header .burger-menu_active .burger-menu_lines {
+  background: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    .burger-menu_active .top-section-nav-section {
+      height: max-content;
+      border-radius: 0;
+    }
+
+    .header-nav-item {
+      margin: 20px 0;
+    }
+  }
+
+  .header-nav-items {
+    display: none;
+  }
+
+  .header {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .domains-sections {
+    width: 100%;
+
+    .section-heading {
+      width: 100%;
+      word-break: break-word;
+    }
+  }
+
+  .side-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .domains-main-section {
+    background-size: cover;
+  }
+
+  .domain-image-wrapper {
+    margin: auto;
+  }
+}
