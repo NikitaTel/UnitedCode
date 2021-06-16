@@ -65,3 +65,11 @@ $(document).ready(function(){
         ]
     })
 });
+
+$('.side-menu-item').click(function (e) {
+    console.log($(e.target));
+    console.log($(e.target).attr('data-link'));
+    $('html, body').animate({
+        scrollTop: $($(e.target).attr('data-link')).offset().top
+    }, 1000);
+});

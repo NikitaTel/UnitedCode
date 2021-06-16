@@ -64,7 +64,6 @@ $family-compact: "SF Compact Display";
 
 .side-menu {
   display: flex;
-  justify-content: space-between;
 }
 
 .side-menu-list {
@@ -89,6 +88,11 @@ $family-compact: "SF Compact Display";
   cursor: pointer;
   list-style: none;
   color: #151821;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
   &:hover {
     color: #F4264B;

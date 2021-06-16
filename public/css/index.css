@@ -10,11 +10,13 @@ img {
   max-height: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 h1 {
   font-size: 60px;
-  font-family: "Fira Sans Condensed", sans-serif; }
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: #323953; }
 
 .top-section-nav-section {
   margin: 60px 0 100px 0;
@@ -144,7 +146,8 @@ h1 {
 
 .tiny-text {
   color: #616883;
-  font-size: 13px; }
+  font-size: 13px;
+  line-height: 19px; }
 
 .bordered-wrapper {
   background: #EAEEFB;
@@ -194,7 +197,8 @@ h1 {
 
 .content {
   width: 60%;
-  margin: auto; }
+  margin: auto;
+  max-width: 1024px; }
 
 .we-provide-text {
   margin: auto;
@@ -1038,8 +1042,7 @@ h1 {
   margin-bottom: 150px; }
 
 .side-menu {
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
 
 .side-menu-list {
   background: #FFFFFF;
@@ -1060,6 +1063,9 @@ h1 {
   cursor: pointer;
   list-style: none;
   color: #151821; }
+  .side-menu-item a {
+    color: inherit;
+    text-decoration: none; }
   .side-menu-item:hover {
     color: #F4264B;
     font-weight: 600; }
@@ -1142,3 +1148,137 @@ h1 {
     background-size: cover; }
   .domain-image-wrapper {
     margin: auto; } }
+
+.domain-image-wrapper > img {
+  z-index: -1; }
+
+.domain-image-wrapper.web {
+  background: url("../images/services/web-stripes.png") center/cover no-repeat;
+  max-width: 280px; }
+
+.domain-image-wrapper.mobile {
+  background: url("../images/services/mobile-stripes.png") center/cover no-repeat;
+  max-width: 260px; }
+
+.domain-image-wrapper.shopify {
+  max-width: 260px; }
+
+.domain-image-wrapper.data {
+  background: url("../images/services/data-stripes.png") center/cover no-repeat;
+  max-width: 240px; }
+
+.domain-image-wrapper.ar {
+  background: url("../images/services/game-stripes.png") center/cover no-repeat;
+  max-width: 320px; }
+
+.domain-image-wrapper.blockchain {
+  background: url("../images/services/blockchain-stripes.png") center/cover no-repeat;
+  max-width: 240px; }
+
+.domain-image-wrapper.mvp {
+  background: url("../images/services/mvp-stripes.png") center/cover no-repeat;
+  max-width: 200px; }
+
+.domain-image-wrapper.qa {
+  background: url("../images/services/qa-stripes.png") center/cover no-repeat;
+  max-width: 210px; }
+
+.why-main-section {
+  position: relative;
+  padding: 50px 0 80px 0;
+  background: #323953 url("../images/why/why-stripes-background.png") center/cover no-repeat;
+  margin-bottom: 150px; }
+  .why-main-section .large-text {
+    color: #FFFFFF;
+    line-height: 35px; }
+  .why-main-section .content {
+    position: relative; }
+
+.why-heading {
+  position: relative;
+  color: #ffffff;
+  margin-bottom: -15px; }
+  .why-heading:after {
+    content: '';
+    background: #F4264B;
+    box-shadow: 0px -6px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-180deg);
+    width: 35px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 10px; }
+
+.giant-text {
+  font-size: 40px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 100px 0 30px 0; }
+
+.why-background {
+  position: absolute;
+  bottom: -113px;
+  z-index: -1;
+  right: 0;
+  width: 100%; }
+
+.why-unitedcode-logo {
+  position: absolute;
+  width: 180px;
+  right: 0;
+  top: -30px; }
+
+.delivery-manager-pods {
+  margin-top: 120px; }
+
+.delivery-manager-section {
+  background: #EAEEFB;
+  padding-top: 150px;
+  padding-bottom: 7%;
+  margin-top: -200px;
+  position: relative;
+  z-index: -2; }
+
+.delivery-manager-pod {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  padding: 20px 30px;
+  margin-bottom: 30px; }
+  .delivery-manager-pod .large-text {
+    line-height: 38px;
+    margin: 0;
+    display: flex;
+    align-items: center; }
+    .delivery-manager-pod .large-text > img {
+      margin-right: 20px; }
+
+.delivery-manager-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .delivery-manager-content > img {
+    margin-right: 50px; }
+  .delivery-manager-content .small-text {
+    color: #323953; }
+
+.advantages-label {
+  color: #616883;
+  text-align: center;
+  margin: 60px 0 20px 0; }
+
+.expertise-table {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 49px; }
+
+@media screen and (max-width: 640px) {
+  .why-unitedcode-logo {
+    position: relative;
+    display: block;
+    margin: 60px auto -70px; }
+  .delivery-manager-content {
+    flex-direction: column; }
+    .delivery-manager-content > img {
+      margin-bottom: 20px; } }

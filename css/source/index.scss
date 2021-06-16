@@ -20,11 +20,13 @@ img {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
   font-size: 60px;
   font-family: $family-condensed;
+  color: #323953;
 }
 
 .top-section-nav-section {
@@ -182,6 +184,7 @@ h1 {
 .tiny-text {
   color: $gray-light;
   font-size: 13px;
+  line-height: 19px;
 }
 
 .bordered-wrapper {
@@ -243,6 +246,7 @@ h1 {
 .content {
   width: 60%;
   margin: auto;
+  max-width: 1024px;
 }
 
 .we-provide-text {
@@ -1361,3 +1365,5 @@ h1 {
 }
 
 @import "./domains";
+@import "./services";
+@import "./why";

@@ -1,0 +1,45 @@
+.domain-image-wrapper {
+
+  > img {
+    z-index: -1;
+  }
+
+  &.web {
+    background: url("../images/services/web-stripes.png") center / cover no-repeat;
+    max-width: 280px;
+  }
+
+  &.mobile {
+    background: url("../images/services/mobile-stripes.png") center / cover no-repeat;
+    max-width: 260px;
+  }
+
+  &.shopify {
+    max-width: 260px;
+  }
+
+  &.data {
+    background: url("../images/services/data-stripes.png") center / cover no-repeat;
+    max-width: 240px;
+  }
+
+  &.ar {
+    background: url("../images/services/game-stripes.png") center / cover no-repeat;
+    max-width: 320px;
+  }
+
+  &.blockchain {
+    background: url("../images/services/blockchain-stripes.png") center / cover no-repeat;
+    max-width: 240px;
+  }
+
+  &.mvp {
+    background: url("../images/services/mvp-stripes.png") center / cover no-repeat;
+    max-width: 200px;
+  }
+
+  &.qa {
+    background: url("../images/services/qa-stripes.png") center / cover no-repeat;
+    max-width: 210px;
+  }
+}
