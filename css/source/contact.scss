@@ -1,0 +1,139 @@
+.contact-main-section {
+  position: relative;
+  padding: 50px 0 120px 0;
+  background: #323953;
+  margin-bottom: 150px;
+
+  .content {
+    position: relative;
+  }
+}
+
+.contact-background {
+  bottom: -158px;
+  z-index: 1;
+}
+
+.contact-form {
+  margin-top: -20%;
+}
+
+.delivery-manager-section {
+  position: relative;
+}
+
+.contact-info-section {
+  padding: 0 3%;
+  box-sizing: border-box;
+  margin-top: 20%;
+}
+
+.contact-main-stripes {
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  transform: translate(0, -30%);
+}
+
+.contact-manager-section {
+  margin-top: -330px;
+  z-index: 0;
+}
+
+.contact-info-wrapper {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -100px;
+
+  > a {
+    text-decoration: none;
+  }
+}
+
+.contact-phone {
+  margin-bottom: 30px;
+}
+
+.contact-people {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 101;
+  margin-top: -150px;
+}
+
+.contact-person-avatar {
+  margin-top: -50px;
+  position: relative;
+
+  > img {
+    z-index: 2;
+    position: relative;
+  }
+}
+
+.contact-person-avatar-layer {
+  background: #F4264B;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 3px;
+  z-index: 1;
+  left: 5px;
+}
+
+.contact-person-name {
+  text-align: center;
+}
+
+.contact-person-job {
+  color: #616883;
+  margin: 5px 0 20px 0;
+}
+
+.contact-person-text {
+  color: #616883;
+}
+
+.contact-person-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 24px;
+  width: 30%;
+  padding: 0 15px 60px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-main-section {
+    padding: 50px 0 80px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-people {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-person-wrapper {
+    margin-bottom: 100px;
+    width: 280px;
+  }
+
+  .people-wrapper {
+    background: #EAEEFB;;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contact-info-section {
+    margin-top: 30%;
+  }
+}

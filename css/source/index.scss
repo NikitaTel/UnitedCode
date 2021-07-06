@@ -764,6 +764,7 @@ a:hover {
   justify-content: center;
   color: #616883;
   font-family: $family-condensed;
+  text-decoration: underline;
 
   img {
     width: 35px;
@@ -1363,6 +1364,27 @@ a:hover {
   .seniors-bottom-image {
     top: 55%;
   }
+
+  .our-articles-section {
+    padding: 40px 0 30px 0;
+
+    > .large-text {
+      font-weight: 700;
+    }
+
+    .article-list .huge-text {
+      font-size: 20px;
+      margin: 10px auto 30px auto;
+    }
+
+    .huge-text {
+      font-size: 22px;
+    }
+  }
+
+  .footer-content {
+    text-align: center;
+  }
 }
 //> 767px
 @media screen and (max-width: 640px) {
@@ -1400,6 +1422,8 @@ a:hover {
 @import "./domains";
 @import "./services";
 @import "./why";
+@import "./contact";
+
 
 .modal.show .modal-dialog {
   transform: translate(0, 50%);

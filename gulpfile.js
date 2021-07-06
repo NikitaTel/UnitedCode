@@ -7,7 +7,7 @@ sass.compiler = require('node-sass');
 gulp.task('sass', function () {
     return gulp.src('css/source/index.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('public/css')); });
+    .pipe(gulp.dest('public_html/css')); });
 
 
 gulp.task('sass:watch', function() {

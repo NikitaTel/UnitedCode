@@ -215,13 +215,20 @@ $family-compact: "SF Compact Display";
     }
   }
 
+  .domains-heading {
+    margin: 0 0 20px 0;
+  }
+
   .side-menu {
     flex-direction: column;
     align-items: center;
+    margin-top: -250px;
   }
 
   .domains-main-section {
     background-size: cover;
+    background-position: unset;
+    padding-bottom: 100px;
   }
 
   .domain-image-wrapper {
